@@ -1,0 +1,283 @@
+
+/*Imports*/
+/*============================================*/
+@import url("font-awesome.min.css");
+
+/*Global Settings*/
+/*=================================================================================================*/
+* {
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-o-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+}
+body { background-color: #06213F;color: #FFF; }
+
+a { text-decoration: none;color: #000; }
+a:hover,
+a:focus { color: #55ABDA; }
+
+/*Framework*/
+/*===================================================================================================*/
+
+.container {
+	padding-left: 15px;
+	padding-right: 15px;
+	margin: auto;
+	width: 95%;
+}
+
+.clearfix { clear: both; }
+
+.active { color: #55ABDA !important; }
+
+@media (min-width: 978px) {
+
+	.container { width: 978px }
+
+}
+@media (max-width: 900px) {
+
+	.sm-hidden { display: none; }
+
+}
+
+
+/*Styles*/
+/*===========================================================================================*/
+
+/*********** Top links style *************/
+.top_links { overflow: hidden; }
+.top_links ul { 
+	list-style: none;
+	font-size: 12px;
+	width: 343px;
+	float: right;
+	color: #FFF;
+	background-color: transparent;
+	padding-top: 10px;
+	overflow: hidden; }
+.top_links ul li { float: left;margin: 3px;}
+.top_links ul li:after { content: "|";padding: 5px; }
+.top_links ul li:last-child:after { content: "";padding: 0px; }
+.top_links ul li a { color: #FFF;text-decoration: none; }
+.top_links ul li a:hover,
+.top_links ul li a:focus { color: #55ABDA; }
+/*********** End Top links style R*************/
+
+/************** Logo & search box style ****************/
+.logo_div { padding-top: 20px; }
+.logo_div .logo { width: 50%;text-align: left;float: left;margin-bottom: 10px;}
+.logo_div .logo a { color: #FFF;text-decoration: none; }
+.logo_div .logo a h1 {
+ font-size: 38px;
+ font-variant: small-caps;
+ line-height: 33px; }
+.logo_div .logo h4 { font-weight: 500;color: #797979; }
+
+.logo_div .search_box { 
+	width: 50%;
+	text-align:right;
+	float: right; }
+
+.logo_div .search_box form { 
+	width: 250px;
+	overflow: hidden;
+	float: right; }
+
+.logo_div .search_box input { 
+	height: 32px;
+	width: 210px;
+	border-top-left-radius: 8px;
+	border-bottom-left-radius: 8px;
+	border: none;
+	padding-left: 5px;
+	font-family: serif;
+	font-size: 15px;
+	float: left;
+	outline: none; }
+.logo_div .search_box button { 
+	height: 32px;
+	width: 40px;
+	position: relative;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	border: none;
+	font-size: 16px;
+	font-weight: 900;
+	background-color: #55ABDA;
+	color: #FFF;
+	padding-bottom: 3px;
+	outline: none;
+	cursor: pointer; }
+/************** End Logo & search box style ****************/
+
+/*************** Menu style *******************/
+.menu { 
+	background-color: #F9F9F9;
+	border-radius: 8px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+	margin-top: 15px; }
+.menu ul { list-style: none; }
+.menu > ul > li { 
+	float: left;
+	min-width: calc(100% / 7);
+	text-align: center;
+	color: #000;
+	text-transform: uppercase;
+	position: relative; }
+#pages, 
+#dropdown,
+#dropdown-l2 { 
+	position: absolute;
+	display: block;
+	top: 20px;
+	background-color: rgba(0,0,0,0.6);
+	border-radius: 10px;
+	display: none;
+	text-align: left;
+	z-index: 1000; }
+a.drop:before,
+#dropdown-l2-p > a:before { content: "\f0d7"; } 
+#dropdown-l2 { top: 0px;left: 100%; }	
+#dropdown-l2-p { position: relative; }	
+#dropdown { left: 10px; }
+#pages { left: 30px; }	
+#pages li > a,
+#dropdown li > a {
+	padding: 10px;
+	color: #FFF;
+	font-size: 14px;
+	display: block;
+	width: 170px; }
+.f-l{ border-radius: 8px 8px 0px 0px;border: none;border-bottom: 1px solid #000; }
+.l-l{ border-radius: 0px 0px 8px 8px;border: none;border-top: 1px solid #000; } 	
+#pages li > a:hover,
+#pages li > a:focus,
+#dropdown li > a:focus,
+#dropdown li > a:hover { background-color: #55ABDA; }	
+.menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child:after { content: '\f0d7'}
+.menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child { position: relative; }
+.menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child ul { position: absolute;left: 175px; } 
+
+/*Mobile  menu style*/
+/*=================================================================================================================*/
+.mobile-menu { border-radius: 8px;padding: 10px;background-color: #f9f9f9;color: #000;margin-top: 20px; }
+.mobile-menu .inner-m-menu { 
+	position: relative;
+	border: 1px solid #ddd;
+	padding: 5px;
+	text-transform:uppercase;
+	cursor: pointer; }
+.mobile-menu .inner-m-menu:after { content: "\f0d7";position: absolute;right: 3px; }	
+.mobile-menu .inner-m-menu > ul { 
+	position: absolute;
+	background-color: rgba(0,0,0,0.7);
+	list-style: none;
+	padding: 5PX;
+	left: 0PX;
+	top: 100%;
+	width: 100%;
+	display: none;
+	z-index: 1000;
+	border-bottom-left-radius: 8px;
+	border-bottom-right-radius: 8px; }
+.mobile-menu .inner-m-menu > ul > li { padding: 10px;background-color: rgba(0,0,0,0.8)}
+.mobile-menu .inner-m-menu > ul > li:last-child 
+	{ border-bottom-left-radius: 8px;border-bottom-right-radius: 8px; }	
+.mobile-menu .inner-m-menu > ul > li a { color: #F9F9F9; }
+.mobile-menu .inner-m-menu > ul > li a:hover,
+.mobile-menu .inner-m-menu > ul > li a:focus { color: #55ABDA }
+
+/*************** Gallery style *******************/
+section.gallery { overflow: hidden;padding: 20px 0px;}
+section.gallery .gallery_container { 
+	padding: 10px;
+	border-radius: 8px;
+	background-color: #f9f9f9;
+	height: 500px;
+	color: #000;
+	overflow: hidden; }
+section.gallery .gallery_container .img_holder { 
+	border-radius: 8px;
+	position: relative;
+	overflow: hidden;
+	height: 100%;
+	background-image: url("../img/g1.jpg");
+	background-size: cover;
+	background-position: center; }
+section.gallery .gallery_container .img_links_holder {
+	position: absolute;
+	bottom: 0px;
+	left: 0px;
+	overflow: hidden;
+	background-color: #F9F9F9; }
+section.gallery .img_links_holder .img_link { 
+	float: left;
+	border:1px solid #ddd;
+	border-top: none;
+	width: calc(100% / 5);
+	height: 100%;
+	padding: 15px;
+	text-align: center;
+	text-transform: uppercase;
+	font-size:14px;
+	font-weight: 700; }
+section.gallery .img_links_holder .img_link:hover {
+	color: #F9F9F9;
+	background-color: #06213F;
+	cursor: pointer;
+	color: #F9F9F9; }
+section.gallery .img_links_holder .img_link:hover { color: #FFF }	
+section.gallery .img_links_holder .img_link { color: #555 }
+section.gallery .description { 
+	position: absolute;
+	top: 20px;
+	left: 20px;
+	width: 300px;
+	height: 200px;
+	background-color: #FFFFFF99;
+	padding: 15px;
+	border-radius: 8px;
+	color: #555; }
+section.gallery .description h3 { font-size: 22px;margin-bottom: 20px;padding-top: 8px }
+section.gallery .description p {}
+section.gallery .description span a{ display: block;text-align: right;color: #555; }
+section.gallery .description span a:hover,
+section.gallery .description span a:focus { color: #55ABDA }
+
+
+/*Media query fixes*/
+
+@media (min-width: 900px) {
+
+	.mobile-menu { display: none; }
+
+	section.gallery .img_links_holder { height: 20%; }
+
+}
+
+@media (max-width: 900px){
+
+	.top_links ul { float: none; margin: auto; }
+
+	.logo_div { padding-top: 0px; }
+	.logo_div .logo a h1 { margin-bottom: 3px; }
+	.logo_div .logo,
+	.logo_div .search_box { width: 100%;text-align: center;	padding-top: 20px; }
+	.logo_div .search_box form { margin: auto;float: none; }
+
+	.menu { display: none; }
+	
+	section.gallery .gallery_container { height: 500PX }
+	section.gallery .gallery_container .img_holder {  }
+	section.gallery .img_links_holder .img_link { width: 100%;height: 40px;padding: 10px; }
+	section.gallery .img_links_holder .img_link a { vertical-align: sub;font-size: 12px }
+
+}
+
+
+/*Animation*/
