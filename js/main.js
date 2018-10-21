@@ -58,7 +58,7 @@ $(document).ready(function(){
 		++i;
 		if ( i == $('.img_link').length+1) { i = 1; }
 
-	},5000);
+	},6000);
 
 
 

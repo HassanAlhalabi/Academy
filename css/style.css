@@ -13,7 +13,7 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 }
-body { background-color: #06213F;color: #FFF; }
+body { background-color: #0c0d0f;color: #FFF; }
 
 a { text-decoration: none;color: #000; }
 a:hover,
@@ -208,7 +208,8 @@ section.gallery .gallery_container .img_holder {
 	height: 100%;
 	background-image: url("../img/g1.jpg");
 	background-size: cover;
-	background-position: center; }
+	background-position: center;
+	transition: 1s; }
 section.gallery .gallery_container .img_links_holder {
 	position: absolute;
 	bottom: 0px;
@@ -221,16 +222,16 @@ section.gallery .img_links_holder .img_link {
 	border-top: none;
 	width: calc(100% / 5);
 	height: 100%;
-	padding: 15px;
+	padding: 28px;
 	text-align: center;
 	text-transform: uppercase;
 	font-size:14px;
 	font-weight: 700;
-	transition: 1s; }
+	transition: 1s;
+	color: #555; }
 section.gallery .img_links_holder .img_link:hover,
 section.gallery .img_links_holder .active {
-	color: #F9F9F9;
-	background-color: #06213F;
+	background-color: #0c0d0f;
 	cursor: pointer;
 	color: #F9F9F9 !important; }	 
 section.gallery .description { 
