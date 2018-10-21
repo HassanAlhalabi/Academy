@@ -13,6 +13,7 @@ $(document).ready(function(){
 			$(this).find('.dropdown-menu').fadeOut('fast');
 			}
 	);
+	
 	//Sub-menu dropdown hover effect. 
 	$('#dropdown-l2-p').hover(
 		function() {
@@ -22,6 +23,7 @@ $(document).ready(function(){
 			/* Stuff to do when the mouse leaves the element */
 			$('#dropdown-l2').fadeOut('fast');
 	});
+
 	//Mobile menu slide down effect.
 	$('.inner-m-menu').click(function() {
 		/* Act on the event */
