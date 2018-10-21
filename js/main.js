@@ -32,15 +32,33 @@ $(document).ready(function(){
 
 	//Gallery change background on click
 	var slideNumber = null;
+	var i = 1;
 	$('.img_link').on('click', function() {
 		/* Act on the event */
 		slideNumber = $(this).attr('id')[$(this).attr('id').length - 1];
 		$('.img_holder').css({
 			backgroundImage : 'url(\'../img/g'+slideNumber+'.jpg\')'
 		});
+
+		$(this).siblings().removeClass('active');
+		$(this).addClass('active');
 		
 	});
 
+	//Gallery auto slide
+	setInterval(function(){
+
+		$('.img_holder').css({
+			backgroundImage: 'url(\'../img/g'+i+'.jpg\')'
+		});
+
+		$('#img_link'+i).siblings().removeClass('active');
+		$('#img_link'+i).addClass('active');
+
+		++i;
+		if ( i == $('.img_link').length+1) { i = 1; }
+
+	},5000);
 
 
 
