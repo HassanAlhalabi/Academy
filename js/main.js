@@ -58,6 +58,10 @@ $(document).ready(function(){
 		++i;
 		if ( i == $('.img_link').length+1) { i = 1; }
 
+		$('.img_link').click(function() {
+			i = slideNumber;
+		});
+
 	},6000);
 
 
