@@ -69,7 +69,8 @@ section.gallery .description,
 footer .footer-content-holder,
 main .social-links .social-link a { color: #555 !important; }
 
-main .tour .info > div > div { background-color: #555 !important; }
+main .tour .info > div > div,
+footer .footer-content-holder button:hover { background-color: #555 !important; }
 
 /*	#888 color  */
 .logo_div .logo h4 { color: #888 !important; }
@@ -98,7 +99,8 @@ main .site-links .links-block a { color: #55ABDA !important; }
 section.gallery .img_links_holder .img_link:hover,
 section.gallery .img_links_holder .active,
 main .tour .info > div > div,
-footer .copy  { color: #F9F9F9 !important; }
+footer .copy,
+section.gallery .description:hover  { color: #F9F9F9 !important; }
 
 /*  #DDD background-color  */
 .loader,
@@ -129,7 +131,8 @@ footer .footer-content-holder button { background-color: #55ABDA !important; }
 #pages, 
 #dropdown,
 #dropdown-l2,
-.mobile-menu .inner-m-menu > ul { background-color: rgba(0,0,0,0.6) !important; }
+.mobile-menu .inner-m-menu > ul,
+section.gallery .description:hover { background-color: rgba(0,0,0,0.6) !important; }
 
 section.gallery .description { background-color: #F9F9F9AA; }
 
@@ -417,12 +420,12 @@ footer .footer-content-holder button {
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	cursor: pointer;}
-footer .footer-content-holder button:hover { background-color: #888; }	
 
 /************* Copy rights style ****************/
 footer .copy { padding: 20px 0px 0px;}
-footer .copy span { display: block; }
-
+footer .copy span { display: block;float: left; }
+footer .copy span:first-of-type { width: 60% }
+footer .copy span:last-of-type { text-align: right;width: 40% }
 
 /*********** Media query fixes **************/
 
@@ -482,7 +485,8 @@ footer .copy span { display: block; }
 	main .tour .info > div { width: 100%;float: none; }
     main .site-links .links-block {width: 100%;}
 
-    footer .copy { font-size: 12px; }
+    footer .copy span:last-of-type,
+    footer .copy span:first-of-type { width: 100%;text-align: center;margin-bottom: 5px; }
 }
 
 
