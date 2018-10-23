@@ -15,7 +15,7 @@
 }
 body { background-color: #0c0d0f;color: #FFF; }
 
-a { text-decoration: none;color: #000; }
+a { text-decoration: none;color: #000;transition: .7s; }
 a:hover,
 a:focus { color: #55ABDA; }
 
@@ -259,12 +259,15 @@ main .news { width: 52%; }
 main .tour { width: 25%; }
 main .students h3,
 main .news h3,
-main .tour h3 { border-bottom: 1px solid #888;padding: 10px 0px; }
+main .tour h3 ,
+main .social-links h3,
+main .site-links h3 { border-bottom: 1px solid #888;padding: 10px 0px;font-size: 23px; }
 main .students h3 a { color: #555; }
 main .students h3 a:hover,
 main .students h3 a:focus,
 main .news p.tail a:hover ,
-main .tour .video span:hover { color: #55ABDA; }
+main .tour .video span:hover,
+main .social-links .social-link a:hover { color: #55ABDA; }
 main .students .s-img-holder { 
 		padding: 8px;
 		border:1px solid #888;
@@ -313,12 +316,16 @@ main .tour .info > div > div {
 	font-size: 14px;
 	transition: .8s; }
 main .tour .info > div:hover > div { background-color: #55ABDA; }	
-
-
+main .social-links h3 { font-size: 23px;text-align: center;width: 200px;margin: auto; }
+main .social-links .social-link { width: 25%;float: left;padding: 30px 0px;text-align: center; }
+main .social-links .social-link a { color: #555; }
+main .site-links .links-block { width: 25%;float: left;padding: 20px 0px; }
+main .site-links .links-block a { display: block;color: #55ABDA; }
+main .site-links .links-block a:hover { color: #555; }
 
 /*Media query fixes*/
 
-@media (min-width: 900px) {
+@media (min-width: 9;00px) {
 
 	.mobile-menu { display: none; }
 
@@ -350,6 +357,15 @@ main .tour .info > div:hover > div { background-color: #55ABDA; }
 	main .tour .info > div { width: 49%;float: left; }
 	main .tour .info > div:first-of-type { margin-right: 2%; }
 
+
+
+
+}
+
+@media (max-width: 700px) {
+
+	main .site-links .links-block { width: 50%; }
+
 }
 
 @media (max-width: 500px) {
@@ -360,6 +376,7 @@ main .tour .info > div:hover > div { background-color: #55ABDA; }
 	main .news .n-container .text { width: 100%;padding: 20px 0px; }
 	main .tour .video video { height: 250px }
 	main .tour .info > div { width: 100%;float: none; }
+    main .site-links .links-block {width: 100%;}
 
 }
 
