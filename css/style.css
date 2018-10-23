@@ -15,7 +15,7 @@
 }
 body { background-color: #0c0d0f;color: #FFF; }
 
-a { text-decoration: none;color: #000;transition: .7s; }
+a { text-decoration: none;color: #555;transition: .7s; }
 a:hover,
 a:focus { color: #55ABDA; }
 
@@ -128,8 +128,7 @@ a:focus { color: #55ABDA; }
 	float: left;
 	min-width: calc(100% / 7);
 	text-align: center;
-	color: #000;
-	text-transform: uppercase;
+	text-transform: capitalize;
 	position: relative; }
 #pages, 
 #dropdown,
@@ -224,7 +223,7 @@ section.gallery .img_links_holder .img_link {
 	border-top: none;
 	width: calc(100% / 5);
 	height: 100%;
-	padding: 28px;
+	padding: 10px 5px;
 	text-align: center;
 	text-transform: uppercase;
 	font-size:14px;
@@ -233,7 +232,7 @@ section.gallery .img_links_holder .img_link {
 	color: #555; }
 section.gallery .img_links_holder .img_link:hover,
 section.gallery .img_links_holder .active {
-	background-color: #0c0d0f;
+	background-color: #55ABDA;
 	cursor: pointer;
 	color: #F9F9F9 !important; }	 
 section.gallery .description { 
@@ -253,7 +252,8 @@ section.gallery .description span a:hover,
 section.gallery .description span a:focus { color: #55ABDA }
 
 /*************** Main content style *******************/
-main .main_content_holder { padding: 10px;border-radius: 8px;background-color: #F9F9F9;color: #555; }
+main .main_content_holder,
+footer .footer-content-holder { padding: 10px;border-radius: 8px;background-color: #F9F9F9;color: #555; }
 main .students,main .news,main .tour { width: 23%;float: left;overflow: hidden;padding: 8px; }
 main .news { width: 52%; }
 main .tour { width: 25%; }
@@ -262,24 +262,24 @@ main .news h3,
 main .tour h3 ,
 main .social-links h3,
 main .site-links h3 { border-bottom: 1px solid #888;padding: 10px 0px;font-size: 23px; }
-main .students h3 a { color: #555; }
-main .students h3 a:hover,
-main .students h3 a:focus,
-main .news p.tail a:hover ,
-main .tour .video span:hover,
-main .social-links .social-link a:hover { color: #55ABDA; }
+main .students > div { margin-top: 20px; }
+main .students > div h3 { font-size: 18px }
+main .students h3 a,
+main .tour .video span{ color: #55ABDA; }
+main .social-links .social-link a:hover,
+footer .footer-content-holder button:hover { color: #55ABDA; }
 main .students .s-img-holder { 
 		padding: 8px;
 		border:1px solid #888;
 		width: 90%;
 		height: 90px;
-		margin-top: 20px;
-		background-color: #555 }
+		margin-top: 10px;
+		background-color: #1E1E1E; }
 main .students .s-img-holder .s-img { border: 1px solid #888;height: 100%; }
-main .news .n-container { padding-top: 20px;overflow: hidden; }
+main .news .n-container { margin-top: 20px;background-color: #DDD; }
 main .news .n-container .img { 
 		width: 40%;
-		background-color: #555;
+		background-color: #1E1E1E;
 		height: 150px;
 		float: left;
 		padding: 8px;
@@ -289,13 +289,13 @@ main .news .text {
 	width: 60%;
 	float: left;
 	padding: 0px  20px; }
-main .news .text h4 { margin-bottom: 8px; }
+main .news .text h4 { padding: 20px 0px; }
 main .news .text p { overflow: auto; }
 main .news p.tail { font-size: 18px;padding: 20px 0px;text-align: center;}
-main .news p.tail a{ color: #555; }
+main .news p.tail a{ color: #55ABDA; }
 main .tour .video { padding-top: 20px; }
 main .tour .video video { width: 100%;height: 200px; }
-main .tour .video span { display: block;padding: 10px 0px;color: #555; }
+main .tour .video span { display: block;padding: 10px 0px;transition: .6s }
 main .tour .info h3 { margin-bottom: 20px; }
 main .tour .info > div { 
 	position: relative;
@@ -316,20 +316,54 @@ main .tour .info > div > div {
 	font-size: 14px;
 	transition: .8s; }
 main .tour .info > div:hover > div { background-color: #55ABDA; }	
+main .social-links { background-color: #DDD;	 }
 main .social-links h3 { font-size: 23px;text-align: center;width: 200px;margin: auto; }
 main .social-links .social-link { width: 25%;float: left;padding: 30px 0px;text-align: center; }
 main .social-links .social-link a { color: #555; }
+main .site-links h3 { text-align: center; }
 main .site-links .links-block { width: 25%;float: left;padding: 20px 0px; }
 main .site-links .links-block a { display: block;color: #55ABDA; }
-main .site-links .links-block a:hover { color: #555; }
+main .site-links .links-block a:hover,
+.news p.tail a:hover,
+main .students h3 a:hover,
+main .students h3 a:focus,
+main .tour .video span:hover { color: #555; }
 
-/*Media query fixes*/
 
-@media (min-width: 9;00px) {
+/***************** footer style **************************/
+footer { margin: 20px 0px; }
+footer .footer-content-holder > div { width: 33.33333%;float: left;padding: 20px 0px; }
+footer .footer-content-holder h4 { margin-bottom: 10px; }
+footer .footer-content-holder .address span { display: block; }
+footer .footer-content-holder .address span:first-of-type { margin-top: 10px; }
+footer .footer-content-holder input { 
+	border-bottom-left-radius: 8px;
+	border-top-left-radius: 8px;
+	outline: none;
+	border: 1px solid #888;
+	border-right: none;
+	width: 80%;
+	height: 30px;
+	float: left;
+	padding-left: 8px; }
+footer .footer-content-holder button {
+	width: 20%;
+	height: 30px;
+	border: 1px solid #888;
+	border-left: none;
+	border-top-right-radius: 8px;
+	border-bottom-right-radius: 8px;
+	cursor: pointer;
+}
+
+
+/*********** Media query fixes **************/
+
+@media (min-width: 900px) {
 
 	.mobile-menu { display: none; }
 
-	section.gallery .img_links_holder { height: 20%; }
+	section.gallery .img_links_holder { height: 15%; }
 
 }
 
@@ -358,8 +392,6 @@ main .site-links .links-block a:hover { color: #555; }
 	main .tour .info > div:first-of-type { margin-right: 2%; }
 
 
-
-
 }
 
 @media (max-width: 700px) {
@@ -372,12 +404,14 @@ main .site-links .links-block a:hover { color: #555; }
 
 	main .students > div { width: 80%;float: none; }
 	main .students > div h3 { font-size: 18px; }
+	main .news .n-container { background-color: transparent; }
 	main .news .n-container .img { width: 60%; }
 	main .news .n-container .text { width: 100%;padding: 20px 0px; }
 	main .tour .video video { height: 250px }
 	main .tour .info > div { width: 100%;float: none; }
     main .site-links .links-block {width: 100%;}
 
+    footer .footer-content-holder > div { width: 100% }
 }
 
 
