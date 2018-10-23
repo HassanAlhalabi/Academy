@@ -180,9 +180,10 @@ a.drop:before,
 	color: #FFF;
 	font-size: 14px;
 	display: block;
-	width: 170px; }
-.f-l{ border-radius: 8px 8px 0px 0px;border: none;border-bottom: 1px solid #000; }
-.l-l{ border-radius: 0px 0px 8px 8px;border: none;border-top: 1px solid #000; } 	
+	width: 170px;
+	border-bottom: 1px solid #555; }
+.f-l{ border-radius: 8px 8px 0px 0px; }
+.l-l{ border-radius: 0px 0px 8px 8px;border: none;} 	
 #pages li > a:hover,
 #pages li > a:focus,
 #dropdown li > a:focus,
@@ -383,7 +384,8 @@ footer .footer-content-holder button {
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
 	cursor: pointer;
-}
+	background-color: #55ABDA;}
+footer .footer-content-holder button:hover { background-color: #888; }	
 
 /************* Copy rights style ****************/
 footer .copy { padding: 20px 0px 0px;color: #F9F9F9; }
