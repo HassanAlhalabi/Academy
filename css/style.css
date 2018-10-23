@@ -13,7 +13,7 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 }
-body { background-color: #0c0d0f;color: #FFF;overflow: hidden; }
+body { overflow: hidden; }
 
 a { text-decoration: none;color: #555;transition: .7s; }
 a:hover,
@@ -46,21 +46,101 @@ a:focus { color: #55ABDA; }
 
 }
 
+/*Colors*/
+/*======================================================================================*/
+
+/*	#1E1E1E background-color  */
+body,
+main .students .s-img-holder,
+main .news .n-container .img { background-color: #1E1E1E !important; }
+
+/*  #555 color  */
+body,
+main .site-links .links-block a:hover,
+.news p.tail a:hover,
+main .students h3 a:hover,
+main .students h3 a:focus,
+main .tour .video span:hover,
+section.gallery .description span a:hover,
+section.gallery .description span a:focus,
+.mobile-menu,
+section.gallery .img_links_holder .img_link,
+section.gallery .description,
+footer .footer-content-holder,
+main .social-links .social-link a { color: #555 !important; }
+
+main .tour .info > div > div { background-color: #555 !important; }
+
+/*	#888 color  */
+.logo_div .logo h4 { color: #888 !important; }
+
+/*  #55ABDA color  */
+main .students h3 a,
+main .tour .video span,
+section.gallery .description span a,
+main .social-links .social-link a:hover,
+footer .footer-content-holder button:hover,
+.top_links ul li a:hover,
+.top_links ul li a:focus,
+.mobile-menu .inner-m-menu > ul > li a:hover,
+.mobile-menu .inner-m-menu > ul > li a:focus,
+main .news p.tail a,
+main .site-links .links-block a { color: #55ABDA !important; }
+
+/*  #F9F9F9 color  */
+.top_links ul,
+.top_links ul li a,
+.logo_div .logo a,
+.logo_div .search_box button,
+#dropdown li > a,
+#pages li > a,
+.mobile-menu .inner-m-menu > ul > li a,
+section.gallery .img_links_holder .img_link:hover,
+section.gallery .img_links_holder .active,
+main .tour .info > div > div,
+footer .copy  { color: #F9F9F9 !important; }
+
+/*  #DDD background-color  */
+.loader,
+main .news .n-container,
+main .social-links { background-color: #DDD !important; }
+
+/*  #F9F9F9 background-color  */
+.loader-container, .menu,
+.mobile-menu,
+section.gallery .gallery_container,
+section.gallery .gallery_container .img_links_holder,
+main .main_content_holder,
+footer .footer-content-holder { background-color: #F9F9F9 !important; }
+
+/*	#55ABDA background-color  */
+.loading,
+.logo_div .search_box button,
+#pages li > a:hover,
+#pages li > a:focus,
+#dropdown li > a:focus,
+#dropdown li > a:hover,
+section.gallery .img_links_holder .img_link:hover,
+section.gallery .img_links_holder .active,
+main .tour .info > div:hover > div,
+footer .footer-content-holder button { background-color: #55ABDA !important; }
+
+/*  rgba(0,0,0,0.6) background-color  */
+#pages, 
+#dropdown,
+#dropdown-l2,
+.mobile-menu .inner-m-menu > ul { background-color: rgba(0,0,0,0.6) !important; }
+
+section.gallery .description { background-color: #F9F9F9AA; }
 
 /*Styles*/
 /*===========================================================================================*/
 
 /************** Loader style *******************/
-.loader { 
-	position: fixed;
-	z-index: 100000;
-	width: 100%;
-	height: 100%;
-	background-color: #DDD;}
+.loader { position: fixed;z-index: 100000;width: 100%;height: 100%; }
 .loader-container { 
 	width: 150px;
 	height: 8px;
-	background-color: #F9F9F9;
 	margin: auto;
 	position: relative;
 	border-radius: 3px;
@@ -68,7 +148,6 @@ a:focus { color: #55ABDA; }
 	margin-top: 38%; }
 .loading { 
 	width: 35%;
-	background-color: #55ABDA;
 	height: 100%;
 	animation-name: loader;
 	animation-duration: 2s;
@@ -84,27 +163,25 @@ a:focus { color: #55ABDA; }
 	font-size: 12px;
 	width: 343px;
 	float: right;
-	color: #FFF;
 	background-color: transparent;
 	padding-top: 10px;
 	overflow: hidden; }
 .top_links ul li { float: left;margin: 3px;}
 .top_links ul li:after { content: "|";padding: 5px; }
 .top_links ul li:last-child:after { content: "";padding: 0px; }
-.top_links ul li a { color: #FFF;text-decoration: none; }
-.top_links ul li a:hover,
-.top_links ul li a:focus { color: #55ABDA; }
+.top_links ul li a { text-decoration: none; }
+
 /*********** End Top links style R*************/
 
 /************** Logo & search box style ****************/
 .logo_div { padding-top: 20px; }
 .logo_div .logo { width: 50%;text-align: left;float: left;margin-bottom: 10px;}
-.logo_div .logo a { color: #FFF;text-decoration: none; }
+.logo_div .logo a { text-decoration: none; }
 .logo_div .logo a h1 {
  font-size: 38px;
  font-variant: small-caps;
  line-height: 33px; }
-.logo_div .logo h4 { font-weight: 500;color: #797979; }
+.logo_div .logo h4 { font-weight: 500; }
 
 .logo_div .search_box { 
 	width: 50%;
@@ -136,8 +213,6 @@ a:focus { color: #55ABDA; }
 	border: none;
 	font-size: 16px;
 	font-weight: 900;
-	background-color: #55ABDA;
-	color: #FFF;
 	padding-bottom: 3px;
 	outline: none;
 	cursor: pointer; }
@@ -145,7 +220,6 @@ a:focus { color: #55ABDA; }
 
 /*************** Menu style *******************/
 .menu { 
-	background-color: #F9F9F9;
 	border-radius: 8px;
 	padding-top: 10px;
 	padding-bottom: 10px;
@@ -163,7 +237,6 @@ a:focus { color: #55ABDA; }
 	position: absolute;
 	display: block;
 	top: 20px;
-	background-color: rgba(0,0,0,0.6);
 	border-radius: 10px;
 	display: none;
 	text-align: left;
@@ -176,25 +249,21 @@ a.drop:before,
 #pages { left: 30px; }	
 #pages li > a,
 #dropdown li > a {
-	padding: 10px;
-	color: #FFF;
 	font-size: 14px;
 	display: block;
 	width: 170px;
-	border-bottom: 1px solid #555; }
+	border-bottom: 1px solid #555;
+	padding: 20px 10px; }
 .f-l{ border-radius: 8px 8px 0px 0px; }
 .l-l{ border-radius: 0px 0px 8px 8px;border: none;} 	
-#pages li > a:hover,
-#pages li > a:focus,
-#dropdown li > a:focus,
-#dropdown li > a:hover { background-color: #55ABDA; }	
+
 .menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child:after { content: '\f0d7'}
 .menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child { position: relative; }
 .menu > ul > li a.drop .dropdown-menu#dropdown > li:last-child ul { position: absolute;left: 175px; } 
 
 /*Mobile  menu style*/
 /*=================================================================================================================*/
-.mobile-menu { border-radius: 8px;padding: 10px;background-color: #f9f9f9;color: #000;margin-top: 20px; }
+.mobile-menu { border-radius: 8px;padding: 10px;margin-top: 20px; }
 .mobile-menu .inner-m-menu { 
 	position: relative;
 	border: 1px solid #ddd;
@@ -204,7 +273,6 @@ a.drop:before,
 .mobile-menu .inner-m-menu:after { content: "\f0d7";position: absolute;right: 3px; }	
 .mobile-menu .inner-m-menu > ul { 
 	position: absolute;
-	background-color: rgba(0,0,0,0.7);
 	list-style: none;
 	padding: 5PX;
 	left: 0PX;
@@ -214,21 +282,15 @@ a.drop:before,
 	z-index: 1000;
 	border-bottom-left-radius: 8px;
 	border-bottom-right-radius: 8px; }
-.mobile-menu .inner-m-menu > ul > li { padding: 10px;background-color: rgba(0,0,0,0.8);}
-.mobile-menu .inner-m-menu > ul > li:last-child 
-	{ border-bottom-left-radius: 8px;border-bottom-right-radius: 8px; }	
-.mobile-menu .inner-m-menu > ul > li a { color: #F9F9F9; }
-.mobile-menu .inner-m-menu > ul > li a:hover,
-.mobile-menu .inner-m-menu > ul > li a:focus { color: #55ABDA }
+.mobile-menu .inner-m-menu > ul > li { padding: 10px;}
+.mobile-menu .inner-m-menu > ul > li:last-child { border-bottom-left-radius: 8px;border-bottom-right-radius: 8px; }	
 
 /*************** Gallery style *******************/
 section.gallery { overflow: hidden;padding: 20px 0px;}
 section.gallery .gallery_container { 
 	padding: 10px;
 	border-radius: 8px;
-	background-color: #f9f9f9;
 	height: 500px;
-	color: #000;
 	overflow: hidden; }
 section.gallery .gallery_container .img_holder { 
 	border-radius: 8px;
@@ -243,8 +305,7 @@ section.gallery .gallery_container .img_links_holder {
 	position: absolute;
 	bottom: 0px;
 	left: 0px;
-	overflow: hidden;
-	background-color: #F9F9F9; }
+	overflow: hidden; }
 section.gallery .img_links_holder .img_link { 
 	float: left;
 	border:1px solid #ddd;
@@ -256,30 +317,23 @@ section.gallery .img_links_holder .img_link {
 	text-transform: uppercase;
 	font-size:14px;
 	font-weight: 700;
-	transition: 1s;
-	color: #555; }
+	transition: 1s; }
 section.gallery .img_links_holder .img_link:hover,
-section.gallery .img_links_holder .active {
-	background-color: #55ABDA;
-	cursor: pointer;
-	color: #F9F9F9 !important; }	 
+section.gallery .img_links_holder .active { cursor: pointer; }	 
 section.gallery .description { 
 	position: absolute;
 	top: 20px;
 	left: 20px;
 	width: 300px;
 	height: 200px;
-	background-color: #FFFFFF99;
 	padding: 15px;
-	border-radius: 8px;
-	color: #555; }
+	border-radius: 8px; }
 section.gallery .description h3 { font-size: 22px;margin-bottom: 20px;padding-top: 8px }
-section.gallery .description p {}
 section.gallery .description span a{ display: block;text-align: right;}
 
 /*************** Main content style *******************/
 main .main_content_holder,
-footer .footer-content-holder { padding: 10px;border-radius: 8px;background-color: #F9F9F9;color: #555; }
+footer .footer-content-holder { padding: 10px;border-radius: 8px; }
 main .students,main .news,main .tour { width: 23%;float: left;overflow: hidden;padding: 8px; }
 main .news { width: 52%; }
 main .tour { width: 25%; }
@@ -290,23 +344,16 @@ main .social-links h3,
 main .site-links h3 { border-bottom: 1px solid #888;padding: 10px 0px;font-size: 23px; }
 main .students > div { margin-top: 20px; }
 main .students > div h3 { font-size: 18px }
-main .students h3 a,
-main .tour .video span,
-section.gallery .description span a{ color: #55ABDA; }
-main .social-links .social-link a:hover,
-footer .footer-content-holder button:hover { color: #55ABDA; }
 main .students .s-img-holder { 
 		padding: 8px;
 		border:1px solid #888;
 		width: 90%;
 		height: 90px;
-		margin-top: 10px;
-		background-color: #1E1E1E; }
+		margin-top: 10px; }
 main .students .s-img-holder .s-img { border: 1px solid #888;height: 100%; }
-main .news .n-container { margin-top: 20px;background-color: #DDD; }
+main .news .n-container { margin-top: 20px; }
 main .news .n-container .img { 
 		width: 40%;
-		background-color: #1E1E1E;
 		height: 150px;
 		float: left;
 		padding: 8px;
@@ -319,7 +366,6 @@ main .news .text {
 main .news .text h4 { padding: 20px 0px; }
 main .news .text p { overflow: auto; }
 main .news p.tail { font-size: 18px;padding: 20px 0px;text-align: center;}
-main .news p.tail a{ color: #55ABDA; }
 main .tour .video { padding-top: 20px; }
 main .tour .video video { width: 100%;height: 200px; }
 main .tour .video span { display: block;padding: 10px 0px;transition: .6s }
@@ -335,29 +381,16 @@ main .tour .info > div > div {
 	height: 100%;
 	position: absolute;
 	right: 0px;
-	background-color: #555;
-	color:#F9F9F9;
 	text-align: center;
 	padding: 24px 3px;
 	text-transform: uppercase;
 	font-size: 14px;
-	transition: .8s; }
-main .tour .info > div:hover > div { background-color: #55ABDA; }	
-main .social-links { background-color: #DDD;	 }
+	transition: .8s; }	
 main .social-links h3 { font-size: 23px;text-align: center;width: 200px;margin: auto; }
 main .social-links .social-link { width: 25%;float: left;padding: 30px 0px;text-align: center; }
-main .social-links .social-link a { color: #555; }
 main .site-links h3 { text-align: center; }
 main .site-links .links-block { width: 25%;float: left;padding: 20px 0px; }
-main .site-links .links-block a { display: block;color: #55ABDA; }
-main .site-links .links-block a:hover,
-.news p.tail a:hover,
-main .students h3 a:hover,
-main .students h3 a:focus,
-main .tour .video span:hover,
-section.gallery .description span a:hover,
-section.gallery .description span a:focus { color: #555; }
-
+main .site-links .links-block a { display: block; }
 
 /***************** footer style **************************/
 footer { margin: 20px 0px; }
@@ -383,12 +416,12 @@ footer .footer-content-holder button {
 	border-left: none;
 	border-top-right-radius: 8px;
 	border-bottom-right-radius: 8px;
-	cursor: pointer;
-	background-color: #55ABDA;}
+	cursor: pointer;}
 footer .footer-content-holder button:hover { background-color: #888; }	
 
 /************* Copy rights style ****************/
-footer .copy { padding: 20px 0px 0px;color: #F9F9F9; }
+footer .copy { padding: 20px 0px 0px;}
+footer .copy span { display: block; }
 
 
 /*********** Media query fixes **************/
@@ -437,16 +470,19 @@ footer .copy { padding: 20px 0px 0px;color: #F9F9F9; }
 
 @media (max-width: 500px) {
 
+	section.gallery .img_links_holder .img_link { font-size: 12px;padding: 10px 5px } 
+
 	main .students > div { width: 80%;float: none; }
+	main .students h3 { font-size: 24px; }
 	main .students > div h3 { font-size: 18px; }
-	main .news .n-container { background-color: transparent; }
+	main .news .n-container { background-color: transparent !important; }
 	main .news .n-container .img { width: 60%; }
 	main .news .n-container .text { width: 100%;padding: 20px 0px; }
 	main .tour .video video { height: 250px }
 	main .tour .info > div { width: 100%;float: none; }
     main .site-links .links-block {width: 100%;}
 
-    footer .copy { font-size: 14px; }
+    footer .copy { font-size: 12px; }
 }
 
 
