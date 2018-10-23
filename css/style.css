@@ -33,6 +33,8 @@ a:focus { color: #55ABDA; }
 
 .active { color: #55ABDA !important; }
 
+.img-responsive { width: 100%;height: 100% }
+
 @media (min-width: 978px) {
 
 	.container { width: 978px }
@@ -250,6 +252,69 @@ section.gallery .description span a{ display: block;text-align: right;color: #55
 section.gallery .description span a:hover,
 section.gallery .description span a:focus { color: #55ABDA }
 
+/*************** Main content style *******************/
+main .main_content_holder { padding: 10px;border-radius: 8px;background-color: #F9F9F9;color: #555; }
+main .students,main .news,main .tour { width: 23%;float: left;overflow: hidden;padding: 8px; }
+main .news { width: 52%; }
+main .tour { width: 25%; }
+main .students h3,
+main .news h3,
+main .tour h3 { border-bottom: 1px solid #888;padding: 10px 0px; }
+main .students h3 a { color: #555; }
+main .students h3 a:hover,
+main .students h3 a:focus,
+main .news p.tail a:hover ,
+main .tour .video span:hover { color: #55ABDA; }
+main .students .s-img-holder { 
+		padding: 8px;
+		border:1px solid #888;
+		width: 90%;
+		height: 90px;
+		margin-top: 20px;
+		background-color: #555 }
+main .students .s-img-holder .s-img { border: 1px solid #888;height: 100%; }
+main .news .n-container { padding-top: 20px;overflow: hidden; }
+main .news .n-container .img { 
+		width: 40%;
+		background-color: #555;
+		height: 150px;
+		float: left;
+		padding: 8px;
+		border: 1px solid #888;}
+main .news .n-container .img img { object-fit: cover;border: 1px solid #888; }
+main .news .text { 
+	width: 60%;
+	float: left;
+	padding: 0px  20px; }
+main .news .text h4 { margin-bottom: 8px; }
+main .news .text p { overflow: auto; }
+main .news p.tail { font-size: 18px;padding: 20px 0px;text-align: center;}
+main .news p.tail a{ color: #555; }
+main .tour .video { padding-top: 20px; }
+main .tour .video video { width: 100%;height: 200px; }
+main .tour .video span { display: block;padding: 10px 0px;color: #555; }
+main .tour .info h3 { margin-bottom: 20px; }
+main .tour .info > div { 
+	position: relative;
+	height: 80px;
+	background-image: url("../img/s-img.gif");
+	margin-bottom: 10px; }
+main .tour .info > div:hover { cursor: pointer; }	
+main .tour .info > div > div { 
+	width: 60%;
+	height: 100%;
+	position: absolute;
+	right: 0px;
+	background-color: #555;
+	color:#F9F9F9;
+	text-align: center;
+	padding: 24px 3px;
+	text-transform: uppercase;
+	font-size: 14px;
+	transition: .8s; }
+main .tour .info > div:hover > div { background-color: #55ABDA; }	
+
+
 
 /*Media query fixes*/
 
@@ -277,6 +342,24 @@ section.gallery .description span a:focus { color: #55ABDA }
 	section.gallery .gallery_container .img_holder {  }
 	section.gallery .img_links_holder .img_link { width: 100%;height: 40px;padding: 10px; }
 	section.gallery .img_links_holder .img_link a { vertical-align: sub;font-size: 12px }
+
+	main .students,main .news,main .tour { width: 100%; }
+	main .students > div { width: 33.33333%;float: left; }
+	main .students h3 { width: 98%;font-size: 2.5vw; }
+	main .tour .video video { height: 400px; }
+	main .tour .info > div { width: 49%;float: left; }
+	main .tour .info > div:first-of-type { margin-right: 2%; }
+
+}
+
+@media (max-width: 500px) {
+
+	main .students > div { width: 80%;float: none; }
+	main .students > div h3 { font-size: 18px; }
+	main .news .n-container .img { width: 60%; }
+	main .news .n-container .text { width: 100%;padding: 20px 0px; }
+	main .tour .video video { height: 250px }
+	main .tour .info > div { width: 100%;float: none; }
 
 }
 
