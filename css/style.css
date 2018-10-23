@@ -336,13 +336,14 @@ footer .footer-content-holder > div { width: 33.33333%;float: left;padding: 20px
 footer .footer-content-holder h4 { margin-bottom: 10px; }
 footer .footer-content-holder .address span { display: block; }
 footer .footer-content-holder .address span:first-of-type { margin-top: 10px; }
+footer .footer-content-holder .subscribe h4{ font-size: 18px;margin-bottom: 20px; }
 footer .footer-content-holder input { 
 	border-bottom-left-radius: 8px;
 	border-top-left-radius: 8px;
 	outline: none;
 	border: 1px solid #888;
 	border-right: none;
-	width: 80%;
+	width: 70%;
 	height: 30px;
 	float: left;
 	padding-left: 8px; }
@@ -355,6 +356,9 @@ footer .footer-content-holder button {
 	border-bottom-right-radius: 8px;
 	cursor: pointer;
 }
+
+/************* Copy rights style ****************/
+footer .copy { padding: 20px 0px 0px;color: #F9F9F9; }
 
 
 /*********** Media query fixes **************/
@@ -397,6 +401,7 @@ footer .footer-content-holder button {
 @media (max-width: 700px) {
 
 	main .site-links .links-block { width: 50%; }
+	footer .footer-content-holder > div { width: 100% }
 
 }
 
@@ -411,7 +416,7 @@ footer .footer-content-holder button {
 	main .tour .info > div { width: 100%;float: none; }
     main .site-links .links-block {width: 100%;}
 
-    footer .footer-content-holder > div { width: 100% }
+    footer .copy { font-size: 14px; }
 }
 
 
