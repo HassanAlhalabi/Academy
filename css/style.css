@@ -274,9 +274,7 @@ section.gallery .description {
 	color: #555; }
 section.gallery .description h3 { font-size: 22px;margin-bottom: 20px;padding-top: 8px }
 section.gallery .description p {}
-section.gallery .description span a{ display: block;text-align: right;color: #555; }
-section.gallery .description span a:hover,
-section.gallery .description span a:focus { color: #55ABDA }
+section.gallery .description span a{ display: block;text-align: right;}
 
 /*************** Main content style *******************/
 main .main_content_holder,
@@ -292,7 +290,8 @@ main .site-links h3 { border-bottom: 1px solid #888;padding: 10px 0px;font-size:
 main .students > div { margin-top: 20px; }
 main .students > div h3 { font-size: 18px }
 main .students h3 a,
-main .tour .video span{ color: #55ABDA; }
+main .tour .video span,
+section.gallery .description span a{ color: #55ABDA; }
 main .social-links .social-link a:hover,
 footer .footer-content-holder button:hover { color: #55ABDA; }
 main .students .s-img-holder { 
@@ -354,7 +353,9 @@ main .site-links .links-block a:hover,
 .news p.tail a:hover,
 main .students h3 a:hover,
 main .students h3 a:focus,
-main .tour .video span:hover { color: #555; }
+main .tour .video span:hover,
+section.gallery .description span a:hover,
+section.gallery .description span a:focus { color: #555; }
 
 
 /***************** footer style **************************/
