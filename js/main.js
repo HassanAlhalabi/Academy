@@ -1,5 +1,11 @@
 $(document).ready(function(){
 
+	//Loader screen function.
+	$(window).on('load', function() {
+		/* Act on the event */
+		$('body').css('overflow','auto');
+		$('.loader').fadeOut('fast');
+	});
 
 	//Dropdown menu hover effect.
 	$('.menu li').hover(

@@ -13,7 +13,7 @@
 	-o-box-sizing: border-box;
 	-ms-box-sizing: border-box;
 }
-body { background-color: #0c0d0f;color: #FFF; }
+body { background-color: #0c0d0f;color: #FFF;overflow: hidden; }
 
 a { text-decoration: none;color: #555;transition: .7s; }
 a:hover,
@@ -49,6 +49,33 @@ a:focus { color: #55ABDA; }
 
 /*Styles*/
 /*===========================================================================================*/
+
+/************** Loader style *******************/
+.loader { 
+	position: fixed;
+	z-index: 100000;
+	width: 100%;
+	height: 100%;
+	background-color: #DDD;}
+.loader-container { 
+	width: 150px;
+	height: 8px;
+	background-color: #F9F9F9;
+	margin: auto;
+	position: relative;
+	border-radius: 3px;
+	overflow: hidden;
+	margin-top: 38%; }
+.loading { 
+	width: 35%;
+	background-color: #55ABDA;
+	height: 100%;
+	animation-name: loader;
+	animation-duration: 2s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+	position: absolute;
+	border-radius: 3px; }		
 
 /*********** Top links style *************/
 .top_links { overflow: hidden; }
@@ -421,3 +448,12 @@ footer .copy { padding: 20px 0px 0px;color: #F9F9F9; }
 
 
 /*Animation*/
+
+@keyframes loader {
+	0%,100% {
+		transform: translateX(185.714285714%);
+	}
+	50% {
+		transform: translateX(0%);
+	}
+}
